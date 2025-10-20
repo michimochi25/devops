@@ -1,10 +1,12 @@
 #!/bin/bash
 
-SSH_KEY="YOUR-SSH-KEY"
-USER="ubuntu"
-HOST="YOUR-SERVER-IP"
+source .env
+
+SSH_KEY=$SSH_KEY
+USER=$USER
+HOST=$HOST
 REMOTE_DIR="/var/www/html"
-LOCAL_DIR="./project-3"
+LOCAL_DIR="./website"
 
 # Exit on error
 set -e
